@@ -5,9 +5,9 @@ import { Entypo } from '@expo/vector-icons'
 export default function Figura({ vetor, posicao, clicado }) {
   const getIcon = () => {
     if (vetor[posicao] !== 0){
-      return vetor[posicao] ? "cross" : "cicle";
+      return vetor[posicao] ? "cross" : "circle";
     }
-    return "cross";
+    return "controller-stop";
   }
   return (
     <TouchableOpacity onPress={clicado}>
